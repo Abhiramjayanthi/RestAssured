@@ -1,0 +1,9 @@
+Framework should be GENERIC not SPECIFIC
+Framework should be shareable , reusable and extendable over period of time
+
+We can write RestAssured code in the below way as well
+public void newDeckOfCards(){
+        RequestSpecification requestSec=RestAssured.given();  //This class has all the methods that are required for preparing the request.
+                Response response= requestSec.get("https://www.deckofcardsapi.com/api/deck/new/");
+        ValidatableResponse validate= response.then();
+    }
